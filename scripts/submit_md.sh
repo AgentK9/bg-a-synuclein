@@ -14,7 +14,7 @@ SCRATCH=/scratch/$(whoami)/md-out/$NAME
 mkdir -p $SCRATCH
 
 # Prep
-python scripts/prep_system.py $DESIGN_PDB $SCRATCH/prepped.pdb
+uv run scripts/prep_system.py $DESIGN_PDB $SCRATCH/prepped.pdb
 
 # Run
-python scripts/run_md.py $SCRATCH/prepped.pdb $SCRATCH/prod
+uv run scripts/run_md.py $SCRATCH/prepped.pdb $SCRATCH/prod
