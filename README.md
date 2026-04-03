@@ -12,3 +12,12 @@
 * We want a protein to bind to this, so we use `--protocol=protein-anything` - TODO: try other methods
 * For testing, we use `--num-design=10`. For the actual run, we'll use `--num-design=10,000` as a minimum. Maybe increase by orders of magnitude for fun
 * For the designed proteins, we'll make them somewhat small (less than 200 residues), since those generally work better
+
+
+## In-Silico Validation
+
+1. Install tools
+  1. `uv tool install openmm`
+  2. `uv tool install pdbfixer`
+  3. `uv tool install mdtraj`
+2. 
