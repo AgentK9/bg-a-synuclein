@@ -2,7 +2,7 @@
 
 1. Install uv: https://docs.astral.sh/uv/getting-started/installation/
 2. Install boltzgen: `uv tool install boltzgen`
-3. Run boltzgen: `NUM_DESIGNS=10 ./run.sh`
+3. Run boltzgen: `NUM_DESIGNS=10 CONFIG=config/01-50-58.yaml ./run.sh`
 
 ## Config explanation
 
