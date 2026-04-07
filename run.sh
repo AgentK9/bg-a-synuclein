@@ -1,3 +1,8 @@
 #!/bin/bash
-# SBATCH --partition=gpu-interactive --nodes=1 --gres=gpu:v100-sxm2:1 --ntasks=1 --mem=16GB --time=04:00:00
+#SBATCH --partition=gpu-interactive
+#SBATCH --nodes=1
+#SBATCH --gres=gpu:v100-sxm2:1
+#SBATCH --ntasks=1
+#SBATCH --mem=16GB
+#SBATCH --time=04:00:00
 /home/$(whoami)/.local/bin/boltzgen run /home/$(whoami)/bg-a-synuclein/$CONFIG --cache=/scratch/$(whoami)/bg-cache/ --output=/scratch/$(whoami)/bg-out/ --protocol=protein-anything --num_designs=$NUM_DESIGNS --budget=2
