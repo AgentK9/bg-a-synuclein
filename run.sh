@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --partition=gpu-interactive
 #SBATCH --nodes=1
-#SBATCH --gres=gpu:t4:1
+#SBATCH --gres=gpu:a100:1
 #SBATCH --ntasks=1
 #SBATCH --mem=16GB
 #SBATCH --time=02:00:00
